@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainGame">
+
+    <View
+        android:id="@+id/viewP1"
+        android:layout_width="125dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#19B388FF"
+        app:layout_constraintEnd_toStartOf="@+id/viewP4"
+        app:layout_constraintTop_toBottomOf="@+id/viewP2" />
+
+    <TextView
+        android:id="@+id/player1name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="player1name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewP1"
+        app:layout_constraintTop_toTopOf="@+id/viewP1" />
+
+    <RadioButton
+        android:id="@+id/startButtonP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:drawableTint="#B388FF"
+        app:layout_constraintBottom_toBottomOf="@+id/player1name"
+        app:layout_constraintStart_toEndOf="@+id/player1name"
+        app:layout_constraintTop_toTopOf="@+id/player1name"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/p1hoelzleTxt"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hölzle übrig:"
+        app:layout_constraintStart_toStartOf="@+id/player1name"
+        app:layout_constraintTop_toBottomOf="@+id/player1name" />
+
+    <TextView
+        android:id="@+id/p1hoelzleInHandTxt"
+        android:layout_width="78dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Hölzle in Hand:"
+        app:layout_constraintStart_toStartOf="@+id/player1name"
+        app:layout_constraintTop_toBottomOf="@+id/p1hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p1hoelzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p1hoelzleTxt"
+        app:layout_constraintStart_toEndOf="@+id/p1hoelzleTxt"
+        app:layout_constraintTop_toTopOf="@+id/p1hoelzleTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/p1hoelzleInMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p1hoelzleInMiddleTxt"
+        app:layout_constraintStart_toEndOf="@+id/p1hoelzleInMiddleTxt"
+        app:layout_constraintTop_toTopOf="@+id/p1hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p1hoelzleInHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p1hoelzleInHandTxt"
+        app:layout_constraintStart_toEndOf="@+id/p1hoelzleInHandTxt"
+        app:layout_constraintTop_toTopOf="@+id/p1hoelzleInHandTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/p1hoelzleInMiddleTxt"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Ansage Hölzle in Mitte:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/player1name"
+        app:layout_constraintTop_toBottomOf="@+id/p1hoelzleTxt" />
+
+    <View
+        android:id="@+id/viewP2"
+        android:layout_width="125dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#19B388FF"
+        app:layout_constraintEnd_toStartOf="@+id/viewP3"
+        app:layout_constraintTop_toBottomOf="@+id/viewP3" />
+
+    <TextView
+        android:id="@+id/player2name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="player2name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewP2"
+        app:layout_constraintTop_toTopOf="@+id/viewP2" />
+
+    <RadioButton
+        android:id="@+id/startButtonP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/player2name"
+        app:layout_constraintStart_toEndOf="@+id/player2name"
+        app:layout_constraintTop_toTopOf="@+id/player2name" />
+
+    <TextView
+        android:id="@+id/p2hoelzleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hölzle übrig:"
+        app:layout_constraintStart_toStartOf="@+id/player2name"
+        app:layout_constraintTop_toBottomOf="@+id/player2name" />
+
+    <TextView
+        android:id="@+id/p2hoelzleInMiddleTxt"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Ansage Hölzle in Mitte:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/player2name"
+        app:layout_constraintTop_toBottomOf="@+id/p2hoelzleTxt" />
+
+    <TextView
+        android:id="@+id/p2hoelzleInHandTxt"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Hölzle in Hand:"
+        app:layout_constraintStart_toStartOf="@+id/player2name"
+        app:layout_constraintTop_toBottomOf="@+id/p2hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p2hoelzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p2hoelzleTxt"
+        app:layout_constraintStart_toEndOf="@+id/p2hoelzleTxt"
+        app:layout_constraintTop_toTopOf="@+id/p2hoelzleTxt" />
+
+    <TextView
+        android:id="@+id/p2hoelzleInMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p2hoelzleInMiddleTxt"
+        app:layout_constraintEnd_toEndOf="@+id/p2hoelzle"
+        app:layout_constraintTop_toTopOf="@+id/p2hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p2hoelzleInHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p2hoelzleInHandTxt"
+        app:layout_constraintEnd_toEndOf="@+id/p2hoelzleInMiddle"
+        app:layout_constraintTop_toTopOf="@+id/p2hoelzleInHandTxt" />
+
+    <View
+        android:id="@+id/viewP3"
+        android:layout_width="125dp"
+        android:layout_height="172dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="144dp"
+        android:background="#19B388FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/player3name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="player3name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewP3"
+        app:layout_constraintTop_toTopOf="@+id/viewP3" />
+
+    <RadioButton
+        android:id="@+id/startButtonP3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/player3name"
+        app:layout_constraintStart_toEndOf="@+id/player3name"
+        app:layout_constraintTop_toTopOf="@+id/player3name"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <TextView
+        android:id="@+id/p3hoelzleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hölzle übrig:"
+        app:layout_constraintStart_toStartOf="@+id/player3name"
+        app:layout_constraintTop_toBottomOf="@+id/player3name" />
+
+    <TextView
+        android:id="@+id/p3hoelzleInHandTxt"
+        android:layout_width="80dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Hölzle in Hand:"
+        app:layout_constraintStart_toStartOf="@+id/player3name"
+        app:layout_constraintTop_toBottomOf="@+id/p3hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p3hoelzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p3hoelzleTxt"
+        app:layout_constraintEnd_toEndOf="@+id/p3hoelzleInMiddle"
+        app:layout_constraintTop_toTopOf="@+id/p3hoelzleTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/p3hoelzleInMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p3hoelzleInMiddleTxt"
+        app:layout_constraintEnd_toEndOf="@+id/p3hoelzleInHand"
+        app:layout_constraintTop_toTopOf="@+id/p3hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p3hoelzleInHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p3hoelzleInHandTxt"
+        app:layout_constraintStart_toEndOf="@+id/p3hoelzleInHandTxt"
+        app:layout_constraintTop_toTopOf="@+id/p3hoelzleInHandTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/p3hoelzleInMiddleTxt"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Ansage Hölzle in Mitte:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/player3name"
+        app:layout_constraintTop_toBottomOf="@+id/p3hoelzleTxt" />
+
+    <View
+        android:id="@+id/viewP4"
+        android:layout_width="125dp"
+        android:layout_height="172dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#19B388FF"
+        app:layout_constraintStart_toEndOf="@+id/viewP3"
+        app:layout_constraintTop_toBottomOf="@+id/viewP3" />
+
+    <TextView
+        android:id="@+id/player4name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="player4name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/viewP4"
+        app:layout_constraintTop_toTopOf="@+id/viewP4" />
+
+    <RadioButton
+        android:id="@+id/startButtonP4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintBottom_toBottomOf="@+id/player4name"
+        app:layout_constraintStart_toEndOf="@+id/player4name"
+        app:layout_constraintTop_toTopOf="@+id/player4name" />
+
+    <TextView
+        android:id="@+id/p4hoelzleTxt"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Hölzle übrig:"
+        app:layout_constraintStart_toStartOf="@+id/player4name"
+        app:layout_constraintTop_toBottomOf="@+id/player4name" />
+
+    <TextView
+        android:id="@+id/p4hoelzleInHandTxt"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Hölzle in Hand:"
+        app:layout_constraintStart_toStartOf="@+id/player4name"
+        app:layout_constraintTop_toBottomOf="@+id/p4hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p4hoelzleInMiddleTxt"
+        android:layout_width="78dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:singleLine="false"
+        android:text="Ansage Hölzle in Mitte:"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/player4name"
+        app:layout_constraintTop_toBottomOf="@+id/p4hoelzleTxt" />
+
+    <TextView
+        android:id="@+id/p4hoelzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p4hoelzleTxt"
+        app:layout_constraintStart_toEndOf="@+id/p4hoelzleTxt"
+        app:layout_constraintTop_toTopOf="@+id/p4hoelzleTxt" />
+
+    <TextView
+        android:id="@+id/p4hoelzleInMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p4hoelzleInMiddleTxt"
+        app:layout_constraintStart_toEndOf="@+id/p4hoelzleInMiddleTxt"
+        app:layout_constraintTop_toTopOf="@+id/p4hoelzleInMiddleTxt" />
+
+    <TextView
+        android:id="@+id/p4hoelzleInHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/p4hoelzleInHandTxt"
+        app:layout_constraintStart_toEndOf="@+id/p4hoelzleInHandTxt"
+        app:layout_constraintTop_toTopOf="@+id/p4hoelzleInHandTxt"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/bottomBar"
+        android:layout_width="411dp"
+        android:layout_height="117dp"
+        android:background="#8C9EFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/versionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="v.0.1a - Jan. '20"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/sliderTextHoelzleInHand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Wie viele Hölzle in der Hand verstecken?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar" />
+
+    <SeekBar
+        android:id="@+id/sliderHoelzleInHand"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="240dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:max="2"
+        android:progress="1"
+        android:progressTint="@color/colorPrimaryDark"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:tickMarkTint="#8AAAAAAA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderTextHoelzleInHand" />
+
+    <TextView
+        android:id="@+id/sliderTextHoelzleInMiddle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Wie viele Hölze sind in der Mitte?"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderHoelzleInHand" />
+
+    <SeekBar
+        android:id="@+id/sliderHoelzleInMiddle"
+        style="@android:style/Widget.Material.SeekBar.Discrete"
+        android:layout_width="240dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:max="11"
+        android:progress="1"
+        android:progressTint="@color/colorPrimaryDark"
+        android:thumbTint="@color/colorPrimaryDark"
+        android:tickMarkTint="#8AAAAAAA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sliderHoelzleInHand" />
+
+    <Button
+        android:id="@+id/gameButton"
+        android:layout_width="119dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="16dp"
+        android:text="Spiel starten!"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomBar"
+        app:layout_constraintEnd_toEndOf="@+id/bottomBar"
+        app:layout_constraintTop_toTopOf="@+id/bottomBar" />
+
+    <TextView
+        android:id="@+id/topCenterText"
+        android:layout_width="115dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center|center_horizontal"
+        android:text="TextView"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewP3" />
+
+    <TextView
+        android:id="@+id/bottomCenterText"
+        android:layout_width="115dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/topCenterText"
+        app:layout_constraintStart_toStartOf="@+id/topCenterText"
+        app:layout_constraintTop_toBottomOf="@+id/middleCenterText" />
+
+    <TextView
+        android:id="@+id/hoelzleInHandSliderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sliderHoelzleInHand"
+        app:layout_constraintEnd_toStartOf="@+id/sliderHoelzleInHand"
+        app:layout_constraintTop_toTopOf="@+id/sliderHoelzleInHand"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/hoelzleInMiddleSliderProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/sliderHoelzleInMiddle"
+        app:layout_constraintEnd_toStartOf="@+id/sliderHoelzleInMiddle"
+        app:layout_constraintTop_toTopOf="@+id/sliderHoelzleInMiddle" />
+
+    <TextView
+        android:id="@+id/middleCenterText"
+        android:layout_width="115dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/viewP4"
+        app:layout_constraintStart_toEndOf="@+id/viewP2"
+        app:layout_constraintTop_toBottomOf="@+id/topCenterText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
